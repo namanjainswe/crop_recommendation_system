@@ -1,0 +1,19 @@
+# Native Streamlit theming. This styles every widget (inputs, tabs, buttons,
+# tables, sliders, chat) through Streamlit's official API, so it keeps working
+# across versions instead of depending on internal CSS class names.
+#
+# Place this file at:  <your project folder>/.streamlit/config.toml
+ 
+[theme]
+base = "dark"
+primaryColor = "#4ADE80"            # accent: buttons, focus rings, active tab
+backgroundColor = "#12161C"         # main canvas
+secondaryBackgroundColor = "#1A202A" # sidebar, cards, inputs, table headers
+textColor = "#E6EAF0"
+font = "sans serif"
+ 
+[server]
+runOnSave = true
+ 
+[browser]
+gatherUsageStats = false
